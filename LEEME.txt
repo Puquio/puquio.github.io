@@ -1,0 +1,24 @@
+PORTAL TURÍSTICO DE PUQUIO — PROTOTIPO MULTIPÁGINA
+
+ESTRUCTURA
+- index.html: portada con carrusel automático.
+- destinos.html: plazas, iglesias y paisajes.
+- experiencias.html: cultura, tradiciones y sabores.
+- galeria.html: galería fotográfica.
+- planifica.html: recomendaciones generales para organizar la visita.
+- css/estilos.css: diseño compartido.
+- js/navegacion.js: menú fijo y menú móvil compartidos.
+- js/carrusel.js: carrusel de la portada.
+
+CÓMO PROBAR
+1. Extrae toda la carpeta del archivo ZIP.
+2. No separes ni muevas los archivos de las carpetas css y js.
+3. Abre index.html con Chrome o Edge.
+4. Usa el menú superior para entrar a cada página.
+5. Para probar el menú móvil, reduce el ancho de la ventana o abre el sitio desde un teléfono.
+
+IMPORTANTE
+- Las fotografías se cargan desde Wikimedia Commons; se requiere conexión a Internet.
+- Antes de publicar, revisa la ficha de cada imagen para confirmar autoría y licencia y conservar los créditos exigidos.
+- Este prototipo es una propuesta visual. Los datos de rutas, horarios, servicios y eventos deben confirmarse con fuentes locales antes de publicarse.
+- Para publicar en GitHub Pages, sube el contenido completo de esta carpeta conservando la estructura. index.html debe quedar en la raíz del sitio.
