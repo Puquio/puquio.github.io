@@ -95,6 +95,8 @@ footer a:hover{color:var(--lime)}
   max-height: 65px;
   object-fit: contain;
   display: block;
+  filter: drop-shadow(0 0 3px rgba(255, 255, 235, 0.95))
+        drop-shadow(0 0 7px rgba(255, 230, 160, 0.75));
 }
 
 @media (max-width: 800px) {
