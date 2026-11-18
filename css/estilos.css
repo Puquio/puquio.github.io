@@ -171,3 +171,17 @@ header .links a:focus {
   -webkit-text-stroke: 0.45px rgba(20, 15, 12, 0.9);
   text-shadow: 1px 2px 5px rgba(0, 0, 0, 1);
 }
+
+/* Mostrar el contenido directamente sobre el tejido */
+.content-section.alt .page-cta {
+  background: transparent !important;
+  color: #fff;
+  box-shadow: none;
+  border: none;
+}
+
+.content-section.alt .page-cta h2,
+.content-section.alt .page-cta p {
+  color: #fff;
+  text-shadow: 1px 2px 5px rgba(0,0,0,.9);
+}
