@@ -42,7 +42,11 @@ body{padding-top:0}
 .subhero h1{font-family:Georgia,serif;font-weight:400;font-size:clamp(43px,6vw,72px);line-height:1.04;margin:12px 0}
 .subhero p{max-width:650px;color:#eef1e8;font-size:16px}
 .content-section{padding:76px 0}
-.content-section.alt{background:#eaece3}
+.content-section.alt{
+  background:
+    linear-gradient(rgba(20,15,12,.30),rgba(20,15,12,.30)),
+    url("../images/fondo-textil-ayacucho.png") center/cover;
+}
 .content-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
 .content-card{background:var(--paper);border:1px solid var(--line);overflow:hidden}
 .content-card img{height:280px}
