@@ -133,3 +133,19 @@ footer {
 footer a {
   color: #fff;
 }
+
+/* Mejorar contraste del menú sobre el tejido ayacuchano */
+header .links a {
+  color: #FFF1C7;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.95);
+  background: rgba(20, 35, 29, 0.72);
+  padding: 9px 12px;
+  border-radius: 6px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+header .links a:hover,
+header .links a:focus {
+  color: #FFFFFF;
+  background: rgba(33, 70, 57, 0.95);
+}
