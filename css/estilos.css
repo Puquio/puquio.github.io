@@ -214,3 +214,20 @@ header .links a:focus {
   color: #fff4d8 !important;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.85) !important;
 }
+
+/* Historia: texto directamente sobre el tejido andino */
+.cultural-soft .content-card {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.cultural-soft .content-card .place-info {
+  background: transparent !important;
+}
+
+.cultural-soft .content-card h3,
+.cultural-soft .content-card p {
+  color: #fff4d8 !important;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9) !important;
+}
