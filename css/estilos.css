@@ -185,3 +185,17 @@ header .links a:focus {
   color: #fff;
   text-shadow: 1px 2px 5px rgba(0,0,0,.9);
 }
+
+/* Panel cultural: textura andina en tonos suaves */
+.cultural-soft {
+  background:
+    linear-gradient(rgba(225, 224, 196, 0.88), rgba(225, 224, 196, 0.88)),
+    url("../images/fondo-textil-ayacucho.png") center/cover !important;
+  color: #354638 !important;
+}
+
+.cultural-soft h2,
+.cultural-soft p {
+  color: #354638 !important;
+  text-shadow: none !important;
+}
