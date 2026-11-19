@@ -186,16 +186,31 @@ header .links a:focus {
   text-shadow: 1px 2px 5px rgba(0,0,0,.9);
 }
 
-/* Panel cultural: textura andina en tonos suaves */
+/* Panel cultural: tejido andino en tonos oliva y tierra */
 .cultural-soft {
-  background:
-    linear-gradient(rgba(225, 224, 196, 0.88), rgba(225, 224, 196, 0.88)),
-    url("../images/fondo-textil-ayacucho.png") center/cover !important;
-  color: #354638 !important;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #8b8b62 !important;
+  color: #263b32 !important;
+}
+
+.cultural-soft::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../images/fondo-textil-ayacucho.png") center/cover;
+  filter: hue-rotate(65deg) saturate(0.75) brightness(0.85);
+  z-index: 0;
+}
+
+.cultural-soft > .wrap {
+  position: relative;
+  z-index: 1;
 }
 
 .cultural-soft h2,
 .cultural-soft p {
-  color: #354638 !important;
+  color: #263b32 !important;
   text-shadow: none !important;
 }
