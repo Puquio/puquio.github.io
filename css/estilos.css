@@ -231,3 +231,15 @@ header .links a:focus {
   color: #fff4d8 !important;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9) !important;
 }
+
+/* Mejorar contraste de textos pequeños sobre el tejido */
+.cultural-soft .kicker {
+  color: #dce9a3 !important;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.95) !important;
+}
+
+.cultural-soft .section-head > p,
+.cultural-soft .content-card p {
+  color: #fff4d8 !important;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.95) !important;
+}
