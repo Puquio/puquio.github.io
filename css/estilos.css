@@ -211,6 +211,6 @@ header .links a:focus {
 
 .cultural-soft h2,
 .cultural-soft p {
-  color: #263b32 !important;
-  text-shadow: none !important;
+  color: #fff4d8 !important;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.85) !important;
 }
