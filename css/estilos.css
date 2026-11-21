@@ -25,19 +25,7 @@ footer{background:#152c28;color:#f5f4eb;padding:65px 0 25px}.footer-top{display:
 @media(max-width:520px){.wrap{width:min(100% - 30px,1160px)}.nav{height:72px}.brand{font-size:13px}.hero h1{font-size:57px}.hero{min-height:650px}.hero-bottom{font-size:9px}.hero-bottom>div:last-child{display:none}section{padding:72px 0}.cards{grid-template-columns:1fr}.place-img{height:270px}.experiences{grid-template-columns:1fr 1fr}.experience-item h3{font-size:20px}.gallery{grid-template-rows:190px 160px 170px;gap:9px}.gallery figure:last-child{height:280px}.gallery figcaption{font-size:17px}.statline{flex-wrap:wrap}.stat{min-width:90px}.map-card{min-height:320px}.footer-bottom{flex-direction:column;gap:8px}}
 
 /* Carrusel automático de portada */
-.hero-photo{transition:none}
-.hero-photo-next{position:absolute;inset:0;z-index:1;opacity:0;pointer-events:none;background-position:center 50%;background-size:cover;filter:saturate(.8);transition:opacity 4.5s cubic-bezier(.22,.61,.36,1)}
-.hero-caption{position:absolute;z-index:3;right:max(22px,calc((100vw - 1160px)/2));bottom:92px;color:#fff;background:#102522a6;padding:10px 15px;border-left:2px solid var(--lime);font-size:11px;letter-spacing:.09em;text-transform:uppercase;max-width:260px}
-.hero-controls{position:absolute;z-index:4;right:max(22px,calc((100vw - 1160px)/2));bottom:35px;display:flex;align-items:center;gap:9px}
-.hero-arrow,.hero-pause{border:1px solid #ffffff9c;background:#10252275;color:white;border-radius:30px;min-width:34px;height:34px;cursor:pointer}
-.hero-arrow{font-size:22px;line-height:1}
-.hero-pause{padding:0 12px;font-size:10px;font-weight:700}
-.hero-dots{display:flex;align-items:center;gap:6px}
-.hero-dot{width:7px;height:7px;padding:0;border:0;border-radius:50%;background:#ffffff80;cursor:pointer}
-.hero-dot[aria-current="true"]{background:var(--lime);transform:scale(1.35)}
-.hero-arrow:hover,.hero-pause:hover{background:#ffffff30}
-@media(max-width:800px){.hero-caption{right:15px;bottom:105px;max-width:210px;font-size:9px}.hero-controls{right:15px;bottom:25px}.hero-bottom{bottom:75px}.hero-bottom>div:last-child{display:none}}
-@media(prefers-reduced-motion:reduce){.hero-photo{transition:none}}
+.hero-photo{animation:heroFadeIn 1.2s ease-out both}
 
 
 
@@ -245,4 +233,13 @@ header .links a:focus {
 .cultural-soft .content-card p {
   color: #fff4d8 !important;
   text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.95) !important;
+}
+
+@keyframes heroFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
