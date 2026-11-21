@@ -243,3 +243,59 @@ header .links a:focus {
     opacity: 1;
   }
 }
+
+ background: linear-gradient(
+    90deg,
+    rgba(10, 28, 25, .82),
+    rgba(10, 28, 25, .48) 60%,
+    rgba(10, 28, 25, .18)
+  );
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  color: #fff;
+  font-family: Georgia, serif;
+  font-size: clamp(64px, 8vw, 100px);
+  line-height: 1;
+  font-weight: 400;
+  text-shadow: 2px 3px 8px rgba(0, 0, 0, .85);
+}
+
+.hero h1 em {
+  color: #e5edc5;
+}
+
+.hero p {
+  max-width: 590px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.7;
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, .95);
+}
+
+.hero .eyebrow {
+  color: #e5edc5;
+  font-weight: 800;
+  text-shadow: 1px 2px 5px #000;
+}
+
+.hero-bottom {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 520px) {
+  .hero h1 {
+    font-size: 57px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}
