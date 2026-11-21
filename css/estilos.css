@@ -25,7 +25,7 @@ footer{background:#152c28;color:#f5f4eb;padding:65px 0 25px}.footer-top{display:
 @media(max-width:520px){.wrap{width:min(100% - 30px,1160px)}.nav{height:72px}.brand{font-size:13px}.hero h1{font-size:57px}.hero{min-height:650px}.hero-bottom{font-size:9px}.hero-bottom>div:last-child{display:none}section{padding:72px 0}.cards{grid-template-columns:1fr}.place-img{height:270px}.experiences{grid-template-columns:1fr 1fr}.experience-item h3{font-size:20px}.gallery{grid-template-rows:190px 160px 170px;gap:9px}.gallery figure:last-child{height:280px}.gallery figcaption{font-size:17px}.statline{flex-wrap:wrap}.stat{min-width:90px}.map-card{min-height:320px}.footer-bottom{flex-direction:column;gap:8px}}
 
 /* Carrusel automático de portada */
-.hero-photo{animation:heroFadeIn 1.2s ease-out both}
+.hero-photo{position:absolute;inset:0;z-index:0;background-position:center;background-size:cover;background-repeat:no-repeat;filter:saturate(.8)}
 
 
 
