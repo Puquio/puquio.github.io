@@ -418,71 +418,75 @@ background-size: 53% 100%;
   line-height: 1.8;
 }
 
-.contact-cards {
+/* CONTACTO: franja textil andina */
+.contact-band {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 28px;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 30px;
+  padding: 38px 30px;
+  background:
+    linear-gradient(rgba(38, 12, 12, .72), rgba(38, 12, 12, .72)),
+    url("../images/fondo-textil-ayacucho.png") center / cover;
+  border: 1px solid rgba(218, 183, 125, .45);
+  box-shadow: 0 12px 30px rgba(28, 45, 37, .12);
 }
 
-.contact-card {
-  position: relative;
-  padding: 42px 38px;
-  background: #fffdf8;
-  border: 1px solid #e4dccb;
-  box-shadow: 0 12px 35px rgba(28, 45, 37, .08);
-  overflow: hidden;
-}
-
-.contact-card::before {
-  content: "";
-  display: block;
-  height: 9px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: url("../images/fondo-textil-ayacucho.png") center 48% / 220px auto repeat-x;
+.contact-item {
+  text-align: center;
+  padding: 12px 18px;
 }
 
 .contact-icon {
-  color: #a9573e;
-  font-size: 38px;
-  margin-bottom: 22px;
+  color: #f1d49a;
+  font-size: 30px;
+  margin-bottom: 16px;
 }
 
-.contact-card .kicker {
-  color: #a9573e;
+.contact-item .kicker {
+  color: #f1d49a;
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 2px;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
-.contact-card h3 {
-  color: #19332e;
-  font-family: Georgia, serif;
-  font-size: 29px;
-  margin: 0 0 14px;
-}
-
-.contact-card p {
-  color: #58645e;
-  line-height: 1.75;
-  margin-bottom: 22px;
-}
-
-.contact-card a {
-  color: #a34f37;
+.contact-item a {
+  color: #fff2d6;
+  font-size: 18px;
   font-weight: 700;
   text-decoration: none;
   overflow-wrap: anywhere;
 }
 
-.contact-card a:hover {
-  color: #19332e;
+.contact-item a:hover {
+  color: #f1d49a;
   text-decoration: underline;
 }
 
+.contact-divider {
+  width: 1px;
+  height: 75px;
+  background: rgba(241, 212, 154, .65);
+}
+
+@media (max-width: 650px) {
+  .contact-band {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 28px 18px;
+  }
+
+  .contact-divider {
+    width: 70%;
+    height: 1px;
+    margin: 0 auto;
+  }
+
+  .contact-item a {
+    font-size: 16px;
+  }
+}
 .contact-message {
   padding: 85px 0;
   text-align: center;
