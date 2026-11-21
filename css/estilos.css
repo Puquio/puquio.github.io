@@ -311,7 +311,7 @@ header .links a:focus {
   background-color: #302d19;
   background-image: var(--subhero-image);
   background-position: right center;
-  background-size: 55% 100%;
+background-size: 53% 100%;
   background-repeat: no-repeat;
 }
 
@@ -319,7 +319,7 @@ header .links a:focus {
   content: "";
   position: absolute;
   inset: 0 auto 0 0;
-  width: 52%;
+  width: 47%;
   background:
     linear-gradient(rgba(25, 24, 10, .28), rgba(25, 24, 10, .28)),
     url("../images/fondo-textil-ayacucho.png") center/cover;
